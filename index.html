@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <!--#regin wrapper-->
+    <div class="wrapper">
+      <!--#regin menu-->
+      <div class="menu">
+        <nav>
+          <div><a href="#">home</a></div>
+
+          <div><a href="#">abut</a></div>
+          <div><a href="#">contact</a></div>
+          <div><a href="#">gallery</a></div>
+          <button class="close">&times;</button>
+        </nav>
+      </div>
+      <!--#endregin-->
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!--#endregin-->
+
+    <!--#regin slider-->
+    <div
+     class="slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/02.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/04.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/03.jpg" alt="" /></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <!--#endregin-->
+    <!--#regin products-->
+    <div class="products">
+      <div class="product">
+        <h1>HELOO-WORLD</h1>
+        <img src="./img/08.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi maxime
+          nemo nam repudiandae tempora ratione eaque, porro autem eos sequi ut
+          asperiores ipsa, provident culpa minima commodi necessitatibus
+          consequuntur dolor! Cum neque minima possimus architecto molestiae
+          sint deserunt obcaecati, perspiciatis, voluptas minus consequuntur
+          laborum inventore ad quaerat dolores accusantium dolor?
+        </p>
+        <a href="#">read-more</a>
+      </div>
+      <div class="product">
+        <h1>HELOO-WORLD</h1>
+        <img src="./img/08.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi maxime
+          nemo nam repudiandae tempora ratione eaque, porro autem eos sequi ut
+          asperiores ipsa, provident culpa minima commodi necessitatibus
+          consequuntur dolor! Cum neque minima possimus architecto molestiae
+          sint deserunt obcaecati, perspiciatis, voluptas minus consequuntur
+          laborum inventore ad quaerat dolores accusantium dolor?
+        </p>
+        <a href="#">read-more</a>
+      </div>
+      <div class="product">
+        <h1>HELOO-WORLD</h1>
+        <img src="./img/08.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi maxime
+          nemo nam repudiandae tempora ratione eaque, porro autem eos sequi ut
+          asperiores ipsa, provident culpa minima commodi necessitatibus
+          consequuntur dolor! Cum neque minima possimus architecto molestiae
+          sint deserunt obcaecati, perspiciatis, voluptas minus consequuntur
+          laborum inventore ad quaerat dolores accusantium dolor?
+        </p>
+        <a href="#">read-more</a>
+      </div>
+      <div class="product">
+        <h1>HELOO-WORLD</h1>
+        <img src="./img/08.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi maxime
+          nemo nam repudiandae tempora ratione eaque, porro autem eos sequi ut
+          asperiores ipsa, provident culpa minima commodi necessitatibus
+          consequuntur dolor! Cum neque minima possimus architecto molestiae
+          sint deserunt obcaecati, perspiciatis, voluptas minus consequuntur
+          laborum inventore ad quaerat dolores accusantium dolor?
+        </p>
+        <a href="#">read-more</a>
+      </div>
+    </div>
+
+    <!--#endregin-->
+
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      let hamburger = document.querySelector(".hamburger");
+      let menu = document.querySelector(".menu");
+      let closeBtn = document.querySelector(".close");
+      hamburger.addEventListener("click", function () {
+        menu.style.left = "0";
+      });
+      closeBtn.addEventListener("click", function () {
+        menu.style.left = "-100%";
+      });
+
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
